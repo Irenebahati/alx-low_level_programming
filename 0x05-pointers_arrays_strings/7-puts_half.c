@@ -19,7 +19,7 @@ void puts_half(char *str)
 
 	n = (longi / 2);
 
-	if ((longi % 2) == 2)
+	if ((longi % 2) == 1)
 
 		n = ((longi + 1) / 2);
 
