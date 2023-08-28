@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * print_chessboars - starting point
+ * print_chessboard - starting point
  * @a: array
  * Return: 0
  */
 
 void print_chessboard(char (*a)[8])
 {
-	int i;
-	int j;
+	int i = 0;
+	int j = 0;
 
 	for (i = 0; i < 8; i++)
 	{
