@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _print_rev_recursion(char *s) - starting point
+ * _print_rev_recursion - starting point
  * @s: The string to be printed
  * Return: 0
  */
