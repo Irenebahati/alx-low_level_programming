@@ -1,7 +1,7 @@
-#0x0A. C - argc, argv
+# 0x0A. C - argc, argv
 This project has 4 compulsory and 1 advanced task
 
-##By the end of this project one should know:
-*How to use arguments passed to your program
-*What are two prototypes of main that you know of, and in which case do you use one or the other
-*How to use __attribute__((unused)) or (void) to compile functions with unused variables or parameters
+## By the end of this project one should know:
+* How to use arguments passed to your program
+* What are two prototypes of main that you know of, and in which case do you use one or the other
+* How to use __attribute__((unused)) or (void) to compile functions with unused variables or parameters
