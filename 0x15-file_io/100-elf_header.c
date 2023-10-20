@@ -275,7 +275,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	Elf64_Ehdr *header;
 	int p, r;
 
-	o = open(argv[1], O_RDONLY);
+	p = open(argv[1], O_RDONLY);
 	if (p == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read file %s\n", argv[1]);
