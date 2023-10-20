@@ -196,12 +196,12 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
 	if (e_ident[EI_DATA] == ELFDATA2MSB)
 		e_type >>= 8;
 
-	printf(" Type: ");
+	printf(" Type:                          ");
 
 	switch (e_type)
 	{
 	case ET_NONE:
-		printf("NONE (None)\n");
+		printf("NONE (Unknown type)\n");
 		break;
 	case ET_REL:
 		printf("REL (Relocatable file)\n");
