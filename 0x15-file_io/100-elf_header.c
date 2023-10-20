@@ -137,11 +137,11 @@ void print_version(unsigned char *e_ident)
  */
 void print_osabi(unsigned char *e_ident)
 {
-	printf(" OS/ABI: ");
+	printf(" OS/ABI:                   ");
 
 	switch (e_ident[EI_OSABI])
 	{
-	case ELFOSABI_NONE:
+	case ELFOSABI_SYSV:
 		printf("UNIX - System V\n");
 		break;
 	case ELFOSABI_HPUX:
@@ -155,6 +155,9 @@ void print_osabi(unsigned char *e_ident)
 		break;
 	case ELFOSABI_SOLARIS:
 		printf("UNIX - Solaris\n");
+		break;
+	case ELFOSABI_AIX:
+		printf("UNIX - AIX\n");
 		break;
 	case ELFOSABI_IRIX:
 		printf("UNIX - IRIX\n");
@@ -182,7 +185,7 @@ void print_osabi(unsigned char *e_ident)
  */
 void print_abi(unsigned char *e_ident)
 {
-	printf(" ABI Version: %d\n",
+	printf(" ABI Version:                   %d\n",
 		e_ident[EI_ABIVERSION]);
 }
 
