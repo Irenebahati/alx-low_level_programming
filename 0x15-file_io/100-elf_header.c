@@ -122,19 +122,16 @@ void print_version(unsigned char *e_ident)
 
 	switch (e_ident[EI_VERSION])
 	{
-		case ELFDATANONE:
-			printf("none\n");
-			break;
-		case ELFDATA2LSB:
-			printf("2's complement, little endian\n");
-			break;
-		case ELFDATA2MSB:
-			printf("2's complement, big endian\n");
-			break;
-		default:
-			printf("<unknown: %x>\n", e_indent[EI_DATA]);
+	{
+	case EV_CURRENT:
+		printf(" (current)\n");
+		break;
+	default:
+		printf("\n");
+		break;
 	}
 }
+
 
 /**
  * print_osabi - Prints the OS/ABI of an ELF header.
