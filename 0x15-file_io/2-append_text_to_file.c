@@ -23,7 +23,8 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (text_content)
 	{
 		for (nletters = 0; text_content[nletters]; nletters++)
-			aba = write(fd, text_content, nletters);
+			;
+		aba = write(fd, text_content, nletters);
 
 		if (aba == -1)
 			return (-1);
